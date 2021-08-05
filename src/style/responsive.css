@@ -1,0 +1,153 @@
+@media screen and (max-width: 1150px) {
+  /* Start Blog Section  */
+  .blog-container {
+    width: 95%;
+  }
+  .contact-container {
+    padding: 20px;
+    box-shadow: none;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* Start Nav  */
+  nav {
+    padding: 0;
+  }
+  .mobile-menu {
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+  }
+  .sticky {
+    padding: 20px 0;
+  }
+  .menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    width: 300px;
+    padding-top: 50px;
+    transform: translateX(-400px);
+    transition: 0.5s;
+  }
+  .showNav {
+    transform: translateX(0);
+  }
+  .menu li {
+    padding-top: 10px;
+  }
+  .logo {
+    padding: 7px;
+    padding-left: 15px;
+    padding-top: 25px;
+  }
+  .sticky .logo {
+    padding-top: 7px;
+  }
+  /* About  */
+  .about-img {
+    width: 95%;
+    margin: auto;
+  }
+  .about-skill {
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  /* Start Certificet  */
+  /* STart Blog  */
+  .blog-container {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  /* Footer  */
+  .footer-container {
+    width: 95%;
+    margin: auto;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  .socialIcon img {
+    width: 60px;
+  }
+  .video-container {
+    justify-content: center;
+  }
+  .video-container iframe {
+    width: 95%;
+  }
+  .certificate-container {
+    justify-content: center;
+  }
+  .certificate-container img {
+    width: 95%;
+    height: 95%;
+  }
+  .calligraphy-container{
+    justify-content: center;
+  }
+  .calligraphy-container img{
+    width: 95%;
+    height: 95%;
+  }
+  
+ 
+  /* STart Blog  */
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Counter  */
+  section.counter_wrapper > div {
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  /* Contact  */
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form {
+    margin: 40px 0;
+    order: 1;
+  }
+  /* Footer  */
+  .footer-container {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+    .logo h2{
+        font-size: 25px;
+    }
+  .contact-container {
+    width: 88%;
+  }
+  #home {
+    font-size: 30px;
+  }
+  #typed {
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 370px) {
+  #home {
+    font-size: 26px;
+  }
+}

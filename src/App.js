@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './style/style.css'
+import './style/responsive.css'
+import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import Home from "./pages/Home";
+import Blog from "./pages/Blog";
+import Videos from './pages/Videos';
+import { ContextPeovider } from './context';
+import SinglePost from './pages/SinglePost';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContextPeovider>
+     <Router>
+       <Switch>
+         <Route exact path='/'>
+           <Home/>
+         </Route>
+         <Route exact path='/post'>
+           <Blog/>
+         </Route>
+         <Route exact path='/post/:slug'>
+           <SinglePost/>
+         </Route>
+         <Route exact path='/video'>
+           <Videos/>
+         </Route>
+       </Switch>
+     </Router>
+    </ContextPeovider>
   );
 }
 
